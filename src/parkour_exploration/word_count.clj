@@ -7,6 +7,9 @@
   (:import [org.apache.hadoop.io Text LongWritable])
   (:gen-class))
 
+;;; https://github.com/damballa/parkour/blob/master/doc/intro.md
+;;; https://github.com/damballa/parkour/blob/master/doc/deployment.md
+
 (defn mapper
   [input]
   (->> (mr/vals input)
